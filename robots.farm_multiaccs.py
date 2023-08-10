@@ -138,7 +138,7 @@ def main(private):
         print(f"{Fore.MAGENTA}{datetime.now().strftime('%d %H:%M:%S')}{Fore.RESET} | {Fore.CYAN}{address}{Fore.RESET} "
               f"| {Fore.RED}Address not qualified. {err_text[is_available_list[1]]}"
               f"{' Added to the end of the list.' if privates.count(private) < retry_count and is_available_list[1] else ''}")
-        if privates.count(private) < retry_count:
+        if privates.count(private) < retry_count and is_available_list:
             privates.append(private)
 
 
