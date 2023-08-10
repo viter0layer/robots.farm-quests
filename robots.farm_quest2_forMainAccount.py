@@ -8,7 +8,7 @@ init()
 
 ref_code = '2ecd8' #ref code
 
-quest_id = '2'
+quest_id = '4' # 4й квест топ
 
 w3 = Web3(Web3.HTTPProvider("https://bsc.blockpi.network/v1/rpc/public"))
 
