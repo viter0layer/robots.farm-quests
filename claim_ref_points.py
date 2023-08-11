@@ -47,7 +47,8 @@ for ref in ref_list:
     }
 
     response = requests.get('https://robots.farm/api/claim-referral', params=params, cookies=cookies, headers=headers)
-    if response.json()['message'] == 'Internal Server Error':
+    print(response.json())
+    if 'message' in responce.json():
         print(f'Уже заклеймлено, ref_id :{ref}')
     else:
         print(f'Заклеймил 1 поинт, ref_id :{ref}')
